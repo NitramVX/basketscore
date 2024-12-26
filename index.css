@@ -1,0 +1,119 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2em 10rem;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #15244b;
+    margin: 20px;
+    border: 5px solid gray;
+    border-radius: 20px;
+    color: white;
+    height: 330px;
+}
+
+#counter {
+    font-family: "Quantico";
+    cursor: pointer;
+}
+
+#homePos, #guestPos {
+    font-family: "Quantico";
+    font-weight: bolder;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 0 10px 0 10px;
+}
+
+#homeside {
+    padding-left: 30px;
+}
+#guestside {
+    padding-right: 30px;
+}
+
+div{
+    text-align: center;
+}
+
+h3 {
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#scoreH, #scoreG {
+    background-color: black;
+    width: 150px;
+    height: 110px;
+    margin-top: -25px;
+    margin-bottom: 5px;
+    color: red;
+    font-family: "Quantico";
+    font-weight: bolder;
+    font-size: 80px;
+    border-radius: 10px;
+}
+
+#buttonG, #buttonH {
+    display: flex;
+}
+
+#buttonG p, #buttonH p {
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    padding: 8px;
+    margin: 15px 6px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+#positionBtn {
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    margin: 130px -30px;
+    }
+
+#poss {
+    color: white;
+    padding: 10px;
+}
+
+#gameCh {
+    color: #9AABD8;
+    font-weight: bolder;
+    border: 2px solid;
+    border-radius: 7px;
+    padding: 4px;
+    display: inline;
+    cursor: pointer;
+}
+
+#gameStart{
+    position: absolute;
+    padding-top: 280px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    #positionBtn{
+        margin: 90px 10px;
+    }
+
+    #scoreH, #scoreG {
+        height: 110px;
+    } 
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}

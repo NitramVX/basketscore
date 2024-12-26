@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="homeside">
+                <h3>HOME</h3>
+                <p id="scoreH"></p>
+                <div id="buttonH">
+                    <p onclick="sum1H()" id="counter">+1</p>
+                    <p onclick="sum2H()" id="counter">+2</p>
+                    <p onclick="sum3H()" id="counter">+3</p>
+                </div>
+            </div>
+            <div id="positionBtn">
+                <span onclick="homePos()" id="homePos"> < </span>
+                <span id="poss">Poss</span>
+                <span onclick="guestPos()" id="guestPos"> > </span>
+            </div>
+            <div id="guestside">
+                <h3>GUEST</h3>
+                <p id="scoreG"></p>
+                <div id="buttonG">
+                    <p onclick="sum1G()" id="counter">+1</p>
+                    <p onclick="sum2G()" id="counter">+2</p>
+                    <p onclick="sum3G()" id="counter">+3</p>
+                </div> 
+            </div>
+                <div id="gameStart">
+                    <p onclick="startGame()" id="gameCh">Start Game</p>
+                    <p onclick="resetGame()" id="gameCh">Reset</p>
+                </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
